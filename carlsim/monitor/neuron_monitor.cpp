@@ -120,3 +120,15 @@ void NeuronMonitor::print() {
 
 	neuronMonitorCorePtr_->print();
 }
+
+std::vector<std::vector<float>> NeuronMonitor::getVectorV(){
+    return neuronMonitorCorePtr_->getVectorV();
+}
+
+std::vector<std::vector<float>> NeuronMonitor::getVectorU(){
+    return neuronMonitorCorePtr_->getVectorU();
+}
+
+std::vector<std::vector<float>> NeuronMonitor::getVectorI(){
+    return neuronMonitorCorePtr_->getVectorI();
+}
